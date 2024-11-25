@@ -147,21 +147,21 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/teaser_visual_1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/teaser_visual_1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           We present a novel approach to empower MM-DiT for layout-to-image generation, achieving high-quality and fine-grained controllable generation, as evidenced by the precise rendering of complex attributes (e.g. color, texture, shape, numeracy, and text).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/teaser_visual_2.png" alt="MY ALT TEXT"/>
+        <img src="static/images/teaser_visual_2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           We present a novel approach to empower MM-DiT for layout-to-image generation, achieving high-quality and fine-grained controllable generation, as evidenced by the precise rendering of complex attributes (e.g. color, texture, shape, numeracy, and text).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/teaser_visual_3.png" alt="MY ALT TEXT"/>
+        <img src="static/images/teaser_visual_3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           We present a novel approach to empower MM-DiT for layout-to-image generation, achieving high-quality and fine-grained controllable generation, as evidenced by the precise rendering of complex attributes (e.g. color, texture, shape, numeracy, and text).
        </h2>
@@ -206,7 +206,7 @@ Finally, we introduce the Layout Designer, which taps into the potential of larg
       <div class="column">
         <h2 class="title is-3">Layout-to-Image Generation Pipeline</h2>
         <div class="content has-text-justified">
-          <img src="static/images/architecture.png">
+          <img src="static/images/architecture.jpg">
           <p>An overview of the proposed pipeline SiamLayout. Layout tokens are derived from the layout encoder based on spatial locations and region descriptions. SiamLayout employs separate transformer parameters to process the layout, treating it as an equally important modality as the image and text.
   Layout and text guide the image independently through siamese branches, and are then fused in the later stage.
   We experiment with two additional network variants that incorporate layout via cross-attention and M<sup>3</sup>-Attention. SiamLayout works best.
@@ -224,7 +224,7 @@ Finally, we introduce the Layout Designer, which taps into the potential of larg
       <div class="column">
         <h2 class="title is-3">Large-scale Layout Dataset</h2>
         <div class="content has-text-justified">
-          <img src="static/images/data_pipeline.png">
+          <img src="static/images/data_pipeline.jpg">
           <p>We contribute a large-scale layout dataset based on SAM, named LayoutSAM, which includes 2.7 million image-text pairs and 10.7 million entities. Each entity is annotated with a bounding box and a detailed description. We further construct the
             LayoutSAM-Eval benchmark as a comprehensive tool for evaluating the layout-to-image generation quality. We design a mechanism to automatically annotate the layout for any given image. 
           </p>
@@ -242,7 +242,7 @@ Finally, we introduce the Layout Designer, which taps into the potential of larg
       <div class="column">
         <h2 class="title is-3">Layout Generation and Optimization Pipeline</h2>
         <div class="content has-text-justified">
-          <img src="static/images/LayoutDesigner.png">
+          <img src="static/images/LayoutDesigner.jpg">
           <p>To support diverse user inputs rather than just bounding boxes of entities, we turn a large language model into a layout planner named LayoutDesigner. This model can convert and optimize various user inputs such as center points,
             masks, scribbles, or even a rough idea, into a harmonious and aesthetically pleasing layout. 
           </p>
@@ -263,21 +263,21 @@ Finally, we introduce the Layout Designer, which taps into the potential of larg
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <!-- Your image here -->
-          <img src="static/images/Qualitative_results.png" alt="MY ALT TEXT"/>
+          <img src="static/images/Qualitative_results.jpg" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
             Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
           </h2>
         </div>
         <div class="item">
           <!-- Your image here -->
-          <img src="static/images/auto_layout_visual.png" alt="MY ALT TEXT"/>
+          <img src="static/images/auto_layout_visual.jpg" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
             Quantitative comparison of different layout planners. LayoutDesigner plans more harmonious and aesthetically pleasing layouts, resulting in images generated based on these layouts exhibiting better quality.
           </h2>
         </div>
         <div class="item">
           <!-- Your image here -->
-          <img src="static/images/three_variants_qualitative.png" alt="MY ALT TEXT"/>
+          <img src="static/images/three_variants_qualitative.jpg" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
             Qualitative results of three network variants. SiamLayout demonstrates more precise controllable generation.
          </h2>
@@ -287,56 +287,6 @@ Finally, we introduce the Layout Designer, which taps into the potential of larg
   </div>
 </section>
 
-
-
-
-
-<!-- Quantitative Results -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item has-text-centered">
-          <img src="static/images/experiments/LayoutSAM-Eval.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
-            Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
-          </h2>
-        </div>
-        <div class="item has-text-centered">
-          <img src="static/images/experiments/layoutdesigner.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
-            Quantitative comparison of different layout planners. LayoutDesigner plans more harmonious and aesthetically pleasing layouts, resulting in images generated based on these layouts exhibiting better quality.
-          </h2>
-        </div>
-        <div class="item has-text-centered">
-          <img src="static/images/experiments/coco.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
-            Qualitative results of three network variants.
-         </h2>
-       </div>
-       <div class="item has-text-centered">
-        <img src="static/images/experiments/t2i-compbench.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
-        </h2>
-      </div>
-      <div class="item has-text-centered">
-        <img src="static/images/experiments/three_variants.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
-        </h2>
-      </div>
-      <div class="item has-text-centered">
-        <img src="static/images/experiments/dataset.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
-        </h2>
-      </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 
 
