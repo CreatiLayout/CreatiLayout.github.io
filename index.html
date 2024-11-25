@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <title>CreatiLayout: Siamese Multimodal Diffusion Transformer for Creative Layout-to-Image Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CreatiLayout: Siamese Multimodal Diffusion Transformer for<br> Creative Layout-to-Image Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=PM0wt9wAAAAJ&hl=zh-CN" target="_blank" >Hui Zhang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?user=DUNijlcAAAAJ&hl=zh-CN" target="_blank">Dexiang Hong</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                  <a href="javascript:void(0)" target="_blank" onclick="return false;">Tingwei Gao</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=NfFTKfYAAAAJ&hl=zh-CN" target="_blank">Yitong Wang</a><sup>2</sup>,</span>
+                  <span class="author-block">  
+                  <a href="javascript:void(0)" target="_blank" onclick="return false;">Jie Shao</a><sup>2</sup>,</span><br>
+                  <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=LVsp9RQAAAAJ&hl=zh-CN" target="_blank">Xinglong Wu</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://zxwu.azurewebsites.net/" target="_blank">Zuxuan Wu</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=f3_FP8AAAAAJ" target="_blank">Yu-Gang Jiang<sup>1</sup></a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Fudan University</span>
+                    <span class="author-block"><sup>2</sup>ByteDance Inc.</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                  <!-- ArXiv PDF Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark" onclick="return false;">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark" onclick="return false;">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- Datasets Link -->
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                class="external-link button is-normal is-rounded is-dark" onclick="return false;">
+                <span class="icon">
+                  <i class="fas fa-database"></i>
+                </span>
+                <span>Dataset (Coming Soon)</span>
+              </a>
+            </span>
+
+            <!-- Demo Link -->
+            <!-- <span class="link-block">
+              <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-desktop"></i>
+                </span>
+                <span>Demo</span>
+              </a>
+            </span> -->
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser_visual_1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          We present a novel approach to empower MM-DiT for layout-to-image generation, achieving high-quality and fine-grained controllable generation, as evidenced by the precise rendering of complex attributes (e.g. color, texture, shape, numeracy, and text).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser_visual_2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          We present a novel approach to empower MM-DiT for layout-to-image generation, achieving high-quality and fine-grained controllable generation, as evidenced by the precise rendering of complex attributes (e.g. color, texture, shape, numeracy, and text).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser_visual_3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          We present a novel approach to empower MM-DiT for layout-to-image generation, achieving high-quality and fine-grained controllable generation, as evidenced by the precise rendering of complex attributes (e.g. color, texture, shape, numeracy, and text).
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion models have been recognized for their ability to generate images that are not only visually appealing but also of high artistic quality.
+As a result, Layout-to-Image (L2I) generation has been proposed to leverage region-specific positions and descriptions to enable more precise and controllable generation.
+However, previous methods primarily focus on UNet-based models (e.g., SD1.5 and SDXL), and limited effort has explored  Multimodal Diffusion Transformers (MM-DiTs), which have demonstrated powerful image generation capabilities.
+Enabling MM-DiT for layout-to-image generation seems straightforward but is challenging due to the complexity of how layout is introduced, integrated, and balanced among multiple modalities.
+To this end, we explore various network variants to efficiently incorporate layout guidance into MM-DiT, and ultimately present SiamLayout.
+To Inherit the advantages of MM-DiT, we use a separate set of network weights to process the layout, treating it as equally important as the image and text modalities.
+Meanwhile, to alleviate the competition among modalities, we decouple the image-layout interaction into a siamese branch alongside the image-text one and fuse them in the later stage.
+Moreover, we contribute a large-scale layout dataset, named LayoutSAM, which includes 2.7 million image-text pairs and 10.7 million entities. Each entity is annotated with a bounding box and a detailed description.  
+We further construct the LayoutSAM-Eval benchmark as a comprehensive tool for evaluating the L2I generation quality.
+Finally, we introduce the Layout Designer, which taps into the potential of large language models in layout planning, transforming them into experts in layout generation and optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!--Layout-to-Image Pipeline -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Layout-to-Image Generation Pipeline</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/architecture.png">
+          <p>An overview of the proposed pipeline SiamLayout. Layout tokens are derived from the layout encoder based on spatial locations and region descriptions. SiamLayout employs separate transformer parameters to process the layout, treating it as an equally important modality as the image and text.
+  Layout and text guide the image independently through siamese branches, and are then fused in the later stage.
+  We experiment with two additional network variants that incorporate layout via cross-attention and M<sup>3</sup>-Attention. SiamLayout works best.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Layout Dataset -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Large-scale Layout Dataset</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/data_pipeline.png">
+          <p>We contribute a large-scale layout dataset based on SAM, named LayoutSAM, which includes 2.7 million image-text pairs and 10.7 million entities. Each entity is annotated with a bounding box and a detailed description. We further construct the
+            LayoutSAM-Eval benchmark as a comprehensive tool for evaluating the layout-to-image generation quality. We design a mechanism to automatically annotate the layout for any given image. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--LayoutDesigner -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Layout Generation and Optimization Pipeline</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/LayoutDesigner.png">
+          <p>To support diverse user inputs rather than just bounding boxes of entities, we turn a large language model into a layout planner named LayoutDesigner. This model can convert and optimize various user inputs such as center points,
+            masks, scribbles, or even a rough idea, into a harmonious and aesthetically pleasing layout. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Qualitative Results -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/Qualitative_results.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/auto_layout_visual.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Quantitative comparison of different layout planners. LayoutDesigner plans more harmonious and aesthetically pleasing layouts, resulting in images generated based on these layouts exhibiting better quality.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/three_variants_qualitative.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of three network variants. SiamLayout demonstrates more precise controllable generation.
+         </h2>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Quantitative Results -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item has-text-centered">
+          <img src="static/images/experiments/LayoutSAM-Eval.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <img src="static/images/experiments/layoutdesigner.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Quantitative comparison of different layout planners. LayoutDesigner plans more harmonious and aesthetically pleasing layouts, resulting in images generated based on these layouts exhibiting better quality.
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <img src="static/images/experiments/coco.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of three network variants.
+         </h2>
+       </div>
+       <div class="item has-text-centered">
+        <img src="static/images/experiments/t2i-compbench.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
+        </h2>
+      </div>
+      <div class="item has-text-centered">
+        <img src="static/images/experiments/three_variants.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
+        </h2>
+      </div>
+      <div class="item has-text-centered">
+        <img src="static/images/experiments/dataset.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Qualitative results on LayoutSAM-Eval. Our proposed SiamLayout achieves more accurate and aesthetically appealing attribute rendering in the regions localized by the bounding boxes, including the rendering of shapes, colors, textures, text, and portraits.
+        </h2>
+      </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
